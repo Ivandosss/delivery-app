@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
+import './register.css';
+
 function RegisterPage() {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
@@ -61,10 +63,11 @@ function RegisterPage() {
       <h1>
         Cadastro
       </h1>
-      <form className="">
-        <label htmlFor="name">
-          Nome
+      <form className="form-register">
+        <label className="label-register" htmlFor="name">
+          Nome:
           <input
+            className="input-register"
             name="name"
             type="text"
             value={ name }
@@ -73,9 +76,10 @@ function RegisterPage() {
             placeholder="Seu nome"
           />
         </label>
-        <label htmlFor="email">
-          Email
+        <label className="label-register" htmlFor="email">
+          Email:
           <input
+            className="input-register"
             name="email"
             type="email"
             value={ email }
@@ -84,9 +88,10 @@ function RegisterPage() {
             placeholder="email@email.com"
           />
         </label>
-        <label htmlFor="password">
-          Senha
+        <label className="label-register" htmlFor="password">
+          Senha:
           <input
+            className="input-register"
             name="password"
             type="password"
             value={ password }

@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: #2e2d35;
 }
 
@@ -9,6 +9,13 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 430px;
+}
+
+.logo {
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  width: 150px;
 }
 
 .button-container {
@@ -37,9 +44,9 @@ body {
   text-align-last: center;
 }
 
-input {
+.input-register {
   background-color: rgba(255, 255, 255, 0.07);
-  border-radius: 15px;
+  border-radius: 10px;
   color: #eaf0fb;
   display: block;
   font-size: 17px;
@@ -57,9 +64,7 @@ input {
 }
 
 button {
-  background-color: white;
-  border-radius: 15px;
-  color: #080710;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
@@ -68,8 +73,13 @@ button {
   width: 100%;
 }
 
+button:enabled {
+  background-color: white;
+  color: #080710;
+}
+
 button:disabled {
   background-color: #ccc;
   border: 1px solid #999;
   color: #666;
-}
+} */
