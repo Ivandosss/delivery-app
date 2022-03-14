@@ -3,7 +3,6 @@ import { Redirect } from 'react-router-dom';
 
 function MainPage() {
   return (
-
     <Redirect to="/login" />
   );
 }

@@ -55,13 +55,13 @@ function LoginPage() {
     <main className="main">
       <span className="title">APP DE DELIVERY</span>
       <input
-        className="input-login"
+        className="input"
         data-testid="common_login__input-email"
         placeholder="digite o email"
         onChange={ (event) => setEmail(event.target.value) }
       />
       <input
-        className="input-login"
+        className="input"
         data-testid="common_login__input-password"
         placeholder="digite a senha"
         onChange={ (event) => setPassword(event.target.value) }

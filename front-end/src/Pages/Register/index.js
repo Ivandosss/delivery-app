@@ -59,27 +59,27 @@ function RegisterPage() {
   };
 
   return (
-    <main>
-      <h1>
+    <main className="main">
+      <h1 className="title">
         Cadastro
       </h1>
       <form className="form-register">
         <label className="label-register" htmlFor="name">
           Nome:
           <input
-            className="input-register"
+            className="input"
             name="name"
             type="text"
             value={ name }
             onChange={ (input) => setName(input.target.value) }
             data-testid="common_register__input-name"
-            placeholder="Seu nome"
+            placeholder="seu nome"
           />
         </label>
         <label className="label-register" htmlFor="email">
           Email:
           <input
-            className="input-register"
+            className="input"
             name="email"
             type="email"
             value={ email }
@@ -91,16 +91,17 @@ function RegisterPage() {
         <label className="label-register" htmlFor="password">
           Senha:
           <input
-            className="input-register"
+            className="input"
             name="password"
             type="password"
             value={ password }
             onChange={ (input) => setPassword(input.target.value) }
             data-testid="common_register__input-password"
-            placeholder="************"
+            placeholder="* * * * * * * * * *"
           />
         </label>
         <button
+          className="button-container"
           disabled={ !(validatePassword() && validateEmail() && validateName()) }
           type="button"
           onClick={ () => handleClick() }

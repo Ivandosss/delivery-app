@@ -7,7 +7,6 @@ import { formatPrice } from '../../utils/format';
 function UserProductCard({ product }) {
   return (
     <section className="user-product-card">
-
       <p
         data-testid={ `customer_products__element-card-title-${product.id}` }
       >

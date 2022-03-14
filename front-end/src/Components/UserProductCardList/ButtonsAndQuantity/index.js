@@ -43,16 +43,16 @@ function ButtonsAndQuantity({ product }) {
   return (
     <div className="button-quantity-box">
       <button
-        type="button"
+        className="button-cart"
         onClick={ decreaseButtonAction }
         data-testid={ `customer_products__button-card-rm-item-${product.id}` }
       >
         -
-
       </button>
 
       <input
         type="text"
+        className="input-cart"
         value={ quantity }
         data-testid={ `customer_products__input-card-quantity-${product.id}` }
         onChange={ (e) => {
@@ -62,12 +62,11 @@ function ButtonsAndQuantity({ product }) {
       />
 
       <button
-        type="button"
+        className="button-cart"
         onClick={ addButtonAction }
         data-testid={ `customer_products__button-card-add-item-${product.id}` }
       >
         +
-
       </button>
     </div>
   );

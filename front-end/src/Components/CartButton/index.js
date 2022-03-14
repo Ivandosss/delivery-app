@@ -3,12 +3,15 @@ import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import cartContext from '../../Context/cartContext';
 import { formatPrice } from '../../utils/format';
 
+import './footer.css';
+
 function CartButton() {
   const { totalPrice, cart } = useContext(cartContext);
   const totalPriceFormatted = formatPrice(totalPrice);
   const history = useHistory();
   return (
     <button
+      className="button-footer"
       type="button"
       data-testid="customer_products__button-cart"
       to="/customer/checkout"
