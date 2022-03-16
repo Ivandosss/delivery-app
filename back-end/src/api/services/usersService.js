@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const Joi = require('joi');
 const fs = require('fs');
 const { user } = require('../../database/models');
 const hash = require('./utils/hashUnhash');
@@ -26,7 +27,15 @@ const getUserSellersService = async () => {
   return { status: 200, answer: users };
 };
 
+const loginSchema = Joi.object({
+  email: Joi.string().email().required(),
+  password: Joi.string().min(6).required(),
+}); 
+
 const userLoginService = async (email, password) => {
+  const { error } = loginSchema.validate({ email, password });
+  if (error) return { status: 401, answer: error.message };
+
   const userAnswer = await user.findOne({ where: { email } });
     
   if (!userAnswer) return { hasToken: false, status: 404, answer: 'not found' };

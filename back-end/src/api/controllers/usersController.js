@@ -1,10 +1,10 @@
 const {
-   getAllUsersService,
-   getUserByIdService,
-   userLoginService,
-   getUserSellersService,
-   deleteUserService,
-  } = require('../services/usersService');
+  getAllUsersService,
+  getUserByIdService,
+  userLoginService,
+  getUserSellersService,
+  deleteUserService,
+} = require('../services/usersService');
 
 const getAllUsersController = async (req, res, next) => {
   try {
@@ -35,17 +35,17 @@ const getUserSellersController = async (req, res, next) => {
 };
 
 const userLoginController = async (req, res) => {
-    const user = req.body;
-    const { email, password } = user;
-    
-    const answer = await userLoginService(email, password);
-    
-    return res.status(answer.status).json(answer.answer);
+  const user = req.body;
+  const { email, password } = user;
+
+  const answer = await userLoginService(email, password);
+
+  return res.status(answer.status).json({ message: answer.answer });
 };
 
 const deleteUserController = async (req, res, next) => {
   const { email } = req.body;
-  
+
   try {
     const answer = await deleteUserService(email);
     res.status(answer.status).json(answer.answer);
