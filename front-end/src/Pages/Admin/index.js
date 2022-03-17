@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Form from './form';
+import Form from '../../Components/AdmForm/form';
+import List from '../../Components/AdmList/list';
 
 import './admin.css'
 
@@ -43,9 +44,11 @@ function AdminPage() {
             </button>
           </Link>
         </div>
-        <div>
-          {/* Lista de Usuários */}
-        </div>
+      </header>
+      <main>
+        <span className="new-user">Cadastrar novo usuário</span>
+        <Form />
+        <List />
       </main>
     </div>
   );
