@@ -5,14 +5,23 @@ import propTypes from 'prop-types';
 function UserHeader({ user }) {
   const history = useHistory();
   return (
-    <nav>
-      <Link
-        to="/seller/orders"
-        data-testid="customer_products__element-navbar-link-orders"
-      >
-        PEDIDOS
+    <nav className="seller-header">
+      <button>
+        <Link
+          className="link-pedidos"
+          to="/seller/orders"
+          data-testid="customer_products__element-navbar-link-orders"
+        >
+          PEDIDOS
 
-      </Link>
+        </Link>
+      </button>
+
+      <div
+        data-testid="customer_products__element-navbar-user-full-name"
+      >
+        {user.name}
+      </div>
 
       <button
         type="button"
@@ -25,12 +34,6 @@ function UserHeader({ user }) {
         Sair
 
       </button>
-
-      <div
-        data-testid="customer_products__element-navbar-user-full-name"
-      >
-        {user.name}
-      </div>
     </nav>
   );
 }

@@ -8,9 +8,31 @@
   text-align: center;
 }
 
-.box-container3  {
+.box-container3 {
   width: 150px;
   margin: 0 auto 0 auto !important;
+}
+
+.main-admin {
+  background-color: #395B64;
+  margin: 0 auto 0 auto !important;
+  border-radius: 10px;
+  height: 520px;
+  padding: 40px;
+  width: 500px;
+}
+
+.main-list {
+  margin: 40px auto 20px auto !important;
+  background-color: #395b64;
+  border-radius: 10px;
+  height: 520px;
+  padding: 40px;
+  width: 600px;
+}
+
+.main-list h1 {
+  text-align: center;
 }
 
 .new-user {
@@ -28,10 +50,11 @@
 }
 
 .form-admin button {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
-.form-admin input, .form-admin select {
+.form-admin input,
+.form-admin select {
   display: flex;
   flex-direction: column;
   margin-left: 15px;

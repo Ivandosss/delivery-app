@@ -29,8 +29,8 @@ function AdminPage() {
           </span>
         </div>
       </header>
-      <main className="main-admin main">
-        <span className="new-user">Cadastrar novo usuário</span>
+      <main className="main-admin">
+        <h2 className="new-user">Cadastrar novo usuário</h2>
         <Form />
         <div className="box-container3">
           <Link to="/">
@@ -43,9 +43,9 @@ function AdminPage() {
               Sair
             </button>
           </Link>
-          <List />
         </div>
       </main>
+        <List />
     </div>
   );
 }

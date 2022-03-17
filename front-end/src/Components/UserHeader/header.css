@@ -23,18 +23,26 @@
   padding: 10px 15px 10px 15px;
 }
 
-.button-quit {
+.main-header button {
   background-color: #395b64 !important;
+  flex-direction: row;
+  margin: 0 0 0 7px;
   display: flex;
-  margin: 0;
   align-items: center;
   font-weight: inherit !important; 
   font-size: 16px !important;
-  font-family: inherit;
   justify-content: center;
-  text-align: center;
   text-decoration: none;
-  width: 100px;
-  border: none;
+  height: 65px;
+  width: 200px;
   cursor: pointer;
+}
+
+.button-footer {
+  background-color: #2666CF !important;
+  color: #F5F2E7 !important;
+  height: 90px;
+  width: 250px;
+  margin-left: 84%;
+  margin-bottom: 15px;
 }

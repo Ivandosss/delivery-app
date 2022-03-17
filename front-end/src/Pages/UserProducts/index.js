@@ -10,7 +10,6 @@ function UserPage() {
     <main>
       <UserHeader user={ userOBJ } />
       <UserProductCardList />
-      <CartButton />
     </main>
   );
 }

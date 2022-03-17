@@ -63,7 +63,7 @@ function Form() {
           />
         </label>
         <label htmlFor="register">
-          Email:
+          Email :
           <input
             data-testid="admin_manage__input-email"
             onChange={ (event) => setEmail(event.target.value) }

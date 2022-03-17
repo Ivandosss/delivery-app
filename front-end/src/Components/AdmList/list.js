@@ -25,7 +25,7 @@ function List() {
     allUsers();
   });
 
-  console.log(users);
+  // console.log(users);
 
   async function onClick(email) {
     try {
@@ -38,8 +38,8 @@ function List() {
   }
 
   return (
-    <div>
-      Lista de usuários
+    <div className="main-list">
+      <h1>Lista de usuários</h1>
       <table>
         <thead>
           <tr>

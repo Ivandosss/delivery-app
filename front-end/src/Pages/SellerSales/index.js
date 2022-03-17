@@ -3,6 +3,8 @@ import SellerHeader from '../../Components/SellerHeader';
 import SellerSaleCard from '../../Components/SellerSaleCard';
 import { getBackEndRequest } from '../../utils/requests';
 
+import './seller.css';
+
 function SellerSales() {
   const [sales, setSales] = useState([]);
   const user = JSON.parse(localStorage.user);
@@ -16,8 +18,10 @@ function SellerSales() {
   return (
     <main>
       <SellerHeader user={ user } />
-      {sales.length === 0 ? 'Loading...' : sales.map((sale, index) => (
+      <div className="sales-cards">
+        {sales.length === 0 ? 'Loading...' : sales.map((sale, index) => (
         <SellerSaleCard sale={ sale } key={ sale.id } index={ index } />))}
+      </div>
     </main>
   );
 }

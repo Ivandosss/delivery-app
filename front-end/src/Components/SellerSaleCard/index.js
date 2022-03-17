@@ -33,39 +33,41 @@ function SellerSaleCard({ sale }) {
   return (
     <Link to={ `/seller/orders/${sale.id}` }>
 
-      <section>
+      <section className="seller-card">
         <p
           data-testid={ `seller_orders__element-delivery-status-${sale.id}` }
         >
           {sale.status}
 
         </p>
-        <p
-          data-testid={ `seller_orders__element-order-date-${sale.id}` }
-        >
-          {saleDate}
+        <div>
+          <p
+            data-testid={ `seller_orders__element-order-date-${sale.id}` }
+          >
+            {saleDate}
 
-        </p>
-        <p
-          data-testid={ `seller_orders__element-order-id-${sale.id}` }
-        >
-          {sale.id}
+          </p>
+          <p
+            data-testid={ `seller_orders__element-order-id-${sale.id}` }
+          >
+            {sale.id}
 
-        </p>
-        <p
-          data-testid={ `seller_orders__element-card-price-${sale.id}` }
-        >
-          {formatPrice(sale.totalPrice)}
+          </p>
+        </div>
+        <div>
+          <p
+            data-testid={ `seller_orders__element-card-price-${sale.id}` }
+          >
+            {formatPrice(sale.totalPrice)}
 
-        </p>
+          </p>
 
-        <p
-          data-testid={ `seller_orders__element-card-address-${sale.id}` }
-        >
-          {saleAddress}
-
-        </p>
-
+          <p
+            data-testid={ `seller_orders__element-card-address-${sale.id}` }
+          >
+            {saleAddress}
+          </p>
+        </div>
       </section>
     </Link>
   );

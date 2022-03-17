@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 import './register.css';
@@ -116,6 +116,7 @@ function RegisterPage() {
       >
         { errorMessage }
       </span>
+     <Link to="/login"><button>Voltar</button></Link>
     </main>
   );
 }

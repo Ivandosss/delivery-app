@@ -2,6 +2,14 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 function Body({ user, index, onClick }) {
+
+  const translate = () => {
+    if (user.role === 'seller') return user.role = 'Vendedor'
+    if (user.role === 'customer') return user.role = 'Consumidor'
+    if (user.role === 'administrato') return user.role = 'Administrador'
+    return user.role
+  }
+
   return (
     <tr>
       <td
@@ -22,7 +30,7 @@ function Body({ user, index, onClick }) {
       <td
         data-testid={ `admin_manage__element-user-table-role-${index}` }
       >
-        { user.email }
+        { translate() }
       </td>
       <td>
         <button

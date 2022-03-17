@@ -3,35 +3,41 @@ import { Link, useHistory } from 'react-router-dom';
 import propTypes from 'prop-types';
 
 import './header.css';
+import CartButton from '../CartButton';
 
 function UserHeader({ user }) {
   const history = useHistory();
   return (
     <nav className="main-header">
       <div className="links-header">
-        <Link
-          className="link-customer"
-          to="/customer/products"
-          data-testid="customer_products__element-navbar-link-products"
-        >
-          Produtos
-        </Link>
+        <button>
+          <Link
+            className="link-customer"
+            to="/customer/products"
+            data-testid="customer_products__element-navbar-link-products"
+          >
+            Produtos
+          </Link>
+        </button>
 
-        <Link
-          className="link-customer"
-          to="/customer/orders"
-          data-testid="customer_products__element-navbar-link-orders"
-        >
-          Meus pedidos
-        </Link>
+        <button>
+          <Link
+            className="link-customer"
+            to="/customer/orders"
+            data-testid="customer_products__element-navbar-link-orders"
+          >
+            Meus pedidos
+          </Link>
+        </button>
       </div>
-      <div className="user-header">
-        <div
+      <h2
           data-testid="customer_products__element-navbar-user-full-name"
         >
           {user.name}
-        </div>
+      </h2>
+      <div className="user-header">
 
+        <CartButton />
         <button
           className="button-quit"
           type="button"
