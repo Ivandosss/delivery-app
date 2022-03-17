@@ -43,12 +43,8 @@ function AdminPage() {
               Sair
             </button>
           </Link>
+          <List />
         </div>
-      </header>
-      <main>
-        <span className="new-user">Cadastrar novo usuário</span>
-        <Form />
-        <List />
       </main>
     </div>
   );
