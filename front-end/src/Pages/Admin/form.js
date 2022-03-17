@@ -52,31 +52,31 @@ function Form() {
   };
 
   return (
-    <div>
+    <div className="form-admin">
       <form name="register">
         <label htmlFor="register">
-          Nome
+          Nome :
           <input
             data-testid="admin_manage__input-name"
             onChange={ (event) => setName(event.target.value) }
           />
         </label>
         <label htmlFor="register">
-          Email
+          Email:
           <input
             data-testid="admin_manage__input-email"
             onChange={ (event) => setEmail(event.target.value) }
           />
         </label>
         <label htmlFor="register">
-          Senha
+          Senha :
           <input
             data-testid="admin_manage__input-password"
             onChange={ (event) => setPassword(event.target.value) }
           />
         </label>
         <label htmlFor="register">
-          Tipo
+          Tipo :
           <select
             defaultValue="customer"
             data-testid="admin_manage__select-role"

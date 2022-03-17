@@ -1,0 +1,39 @@
+.box-container1 span {
+  color: #2c3333 !important;
+}
+
+.box-container2 {
+  display: none;
+  color: #2c3333 !important;
+  text-align: center;
+}
+
+.box-container3  {
+  width: 150px;
+  margin: 0 auto 0 auto !important;
+}
+
+.new-user {
+  text-align: center;
+}
+
+.form-admin form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-admin label {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.form-admin button {
+  margin-top: 25px;
+}
+
+.form-admin input, .form-admin select {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 10px;
+}

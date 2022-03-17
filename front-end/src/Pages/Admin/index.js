@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Form from './form';
 
+import './admin.css'
+
 function AdminPage() {
   function exit() {
     localStorage.clear();
@@ -25,6 +27,10 @@ function AdminPage() {
             Trybeer Admin
           </span>
         </div>
+      </header>
+      <main className="main-admin main">
+        <span className="new-user">Cadastrar novo usuário</span>
+        <Form />
         <div className="box-container3">
           <Link to="/">
             <button
@@ -37,10 +43,6 @@ function AdminPage() {
             </button>
           </Link>
         </div>
-      </header>
-      <main>
-        <span className="new-user">Cadastrar novo usuário</span>
-        <Form />
         <div>
           {/* Lista de Usuários */}
         </div>
