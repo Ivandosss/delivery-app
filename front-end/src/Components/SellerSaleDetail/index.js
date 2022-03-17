@@ -29,30 +29,32 @@ function SaleDetail(props) {
   };
 
   return (
-    <div>
-      <p
-        data-testid={
-          `seller_order_details__element-order-details-label-order-id-${sale.id}`
-        }
-      >
-        {order}
-      </p>
-      <p
-        data-testid={
-          `seller_order_details__element-order-details-label-order-date-${sale.id}`
-        }
-      >
-        {dateFormated}
+    <div className="main-seller-card">
+      <div  className="seller-card">
+        <p
+          data-testid={
+            `seller_order_details__element-order-details-label-order-id-${sale.id}`
+          }
+        >
+          {order}
+        </p>
+        <p
+          data-testid={
+            `seller_order_details__element-order-details-label-order-date-${sale.id}`
+          }
+        >
+          {dateFormated}
 
-      </p>
-      <p
-        data-testid={
-          `seller_order_details__element-order-details-label-delivery-status-${sale.id}`
-        }
-      >
-        {saleStatus}
+        </p>
+        <p
+          data-testid={
+            `seller_order_details__element-order-details-label-delivery-status-${sale.id}`
+          }
+        >
+          {saleStatus}
 
-      </p>
+        </p>
+      </div>
       <button
         type="button"
         data-testid="seller_order_details__button-preparing-check"

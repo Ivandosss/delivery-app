@@ -24,7 +24,7 @@ function SpecificSale() {
       <main>
         <UserHeader user={ user } />
         <SaleDetail sale={ pageSale } />
-        <table>
+        <table className="table-seller">
           <thead>
             <tr>
               <th>Item</th>

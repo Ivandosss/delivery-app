@@ -18,7 +18,7 @@ function SaleItem({ product, index }) {
         data-testid={ `customer_order_details__element-order-table-name-${index}` }
       >
         {product.name}
-
+        
       </td>
       <td
         data-testid={ `customer_order_details__element-order-table-quantity-${index}` }

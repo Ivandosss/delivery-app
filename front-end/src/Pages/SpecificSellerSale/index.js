@@ -6,6 +6,8 @@ import SellerHeader from '../../Components/SellerHeader';
 import { formatPrice } from '../../utils/format';
 import { getBackEndRequest } from '../../utils/requests';
 
+import './sale.css'
+
 function SpecificSellerSale() {
   const params = useParams();
   const { id } = params;
@@ -21,10 +23,16 @@ function SpecificSellerSale() {
 
   return (
     !pageSale ? 'Loading...' : (
-      <main>
+      <main className="main-seller-sale">
         <SellerHeader user={ user } />
-        <SellerSaleDetail sale={ pageSale } />
-        <table>
+        <SellerSaleDetail sale={pageSale} />
+        <p
+          data-testid="seller_order_details__element-order-total-price"
+        >
+          {`Total: ${formatPrice(pageSale.totalPrice)}`}
+
+        </p>
+        <table className="table-seller">
           <thead>
             <tr>
               <th>Item</th>
@@ -35,7 +43,6 @@ function SpecificSellerSale() {
             </tr>
           </thead>
           <tbody>
-
             {pageSale.products.map((product, index) => (<SellerSaleItem
               key={ product.id }
               product={ product }
@@ -44,12 +51,6 @@ function SpecificSellerSale() {
           </tbody>
 
         </table>
-        <p
-          data-testid="seller_order_details__element-order-total-price"
-        >
-          {`Total: ${formatPrice(pageSale.totalPrice)}`}
-
-        </p>
       </main>
     )
   );

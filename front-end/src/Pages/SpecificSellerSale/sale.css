@@ -1,0 +1,19 @@
+.table-seller {
+  box-shadow: 1px 2px 2px 2px #395B64;
+  margin: 20px auto 0 auto !important;
+}
+
+.main-seller-sale p {
+  text-align: center;
+}
+
+
+.main-seller-card .seller-card, .main-seller-card {
+  margin: 20px auto 0 auto !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-seller-card {
+  width: 300px;
+}
