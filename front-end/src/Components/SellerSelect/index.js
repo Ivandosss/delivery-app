@@ -24,7 +24,7 @@ function SellerSelect(props) {
   };
   return (
     <label htmlFor="sellerSelect">
-      P. Vendedora Responsável:
+      P. Vendedora Responsável :
       <select
         name="sellerSelect"
         id="sellerSelect"

@@ -1,25 +1,31 @@
 import React, { useContext } from 'react';
 import ShipDetails from '../../Components/ShipDetails';
 import UserCheckoutItem from '../../Components/UserCheckoutItem';
+import UserHeader from '../../Components/UserHeader';
 import cartContext from '../../Context/cartContext';
 import { formatPrice } from '../../utils/format';
 
+import './checkout.css';
+
 function Checkout() {
+  const { user } = localStorage;
+  const userOBJ = JSON.parse(user);
   const { cart, totalPrice } = useContext(cartContext);
   return (
-    <main>
-      <table>
-        <thead>
-          <tr>
-            <th>Item</th>
-            <th>Descricao</th>
-            <th>Quantidade</th>
-            <th>Valor Unitário</th>
-            <th>Sub-total</th>
-            <th>Remover Item</th>
+    <main className="main-checkout">
+      <UserHeader user={ userOBJ } />
+      <table className="carrinho-table">
+        <thead className="carrinho-head">
+          <tr className="carrinho-head">
+            <th className="carrinho-head-item">Item</th>
+            <th className="carrinho-head-item">Descricao</th>
+            <th className="carrinho-head-item">Quantidade</th>
+            <th className="carrinho-head-item">Valor Unitário</th>
+            <th className="carrinho-head-item">Sub-total</th>
+            <th className="carrinho-head-item">Remover Item</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="carrinho-itens">
 
           {cart.map((product, index) => (<UserCheckoutItem
             key={ product.id }
@@ -29,13 +35,15 @@ function Checkout() {
         </tbody>
 
       </table>
-      <p
-        data-testid="customer_checkout__element-order-total-price"
-      >
-        {`Total: ${formatPrice(totalPrice)}`}
+      <div>
+        <p
+          data-testid="customer_checkout__element-order-total-price"
+        >
+          {`Total: ${formatPrice(totalPrice)}`}
 
-      </p>
-      <ShipDetails />
+        </p>
+        <ShipDetails />
+      </div>
     </main>
   );
 }

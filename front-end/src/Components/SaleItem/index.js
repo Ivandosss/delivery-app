@@ -2,10 +2,12 @@ import React from 'react';
 import propTypes from 'prop-types';
 import { formatPrice } from '../../utils/format';
 
+import './saleitem.css';
+
 function SaleItem({ product, index }) {
   return (
 
-    <tr>
+    <tr className="saleItem">
       <td
         data-testid={ `customer_order_details__element-order-table-item-number-${index}` }
       >

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import propTypes from 'prop-types';
 
-import './header.css'
+import './header.css';
 
 function UserHeader({ user }) {
   const history = useHistory();
@@ -28,7 +28,7 @@ function UserHeader({ user }) {
       <div className="user-header">
         <div
           data-testid="customer_products__element-navbar-user-full-name"
-          >
+        >
           {user.name}
         </div>
 
@@ -36,11 +36,11 @@ function UserHeader({ user }) {
           className="button-quit"
           type="button"
           onClick={ () => {
-          localStorage.clear();
-          history.push('/login');
+            localStorage.clear();
+            history.push('/login');
           } }
           data-testid="customer_products__element-navbar-link-logout"
-          >
+        >
           Sair
         </button>
       </div>

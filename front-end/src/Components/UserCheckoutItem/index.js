@@ -45,7 +45,6 @@ function UserCheckoutItem({ product, index }) {
           onClick={ () => { removeProductFromCart(product); } }
         >
           Remover
-
         </button>
 
       </td>

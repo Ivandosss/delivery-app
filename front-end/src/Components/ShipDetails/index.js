@@ -28,31 +28,33 @@ function ShipDetails() {
     history.push(`/customer/orders/${answer.id}`);
   };
   return (
-    <form>
-      <SellerSelect setSelectedParent={ setSelected } />
-      <label htmlFor="address">
-        Endereço
-        <input
-          type="text"
-          name="address"
-          id="address"
-          value={ address }
-          onChange={ (e) => { setAddress(e.target.value); } }
-          data-testid="customer_checkout__input-address"
-        />
-      </label>
+    <form className="customer-form">
+      <div>
+        <SellerSelect setSelectedParent={ setSelected } />
+        <label htmlFor="address">
+          Endereço :
+          <input
+            type="text"
+            name="address"
+            id="address"
+            value={ address }
+            onChange={ (e) => { setAddress(e.target.value); } }
+            data-testid="customer_checkout__input-address"
+          />
+        </label>
 
-      <label htmlFor="number">
-        Número
-        <input
-          type="text"
-          name="number"
-          id="number"
-          value={ number }
-          onChange={ (e) => { setNumber(e.target.value); } }
-          data-testid="customer_checkout__input-addressNumber"
-        />
-      </label>
+        <label htmlFor="number">
+          Número :
+          <input
+            type="text"
+            name="number"
+            id="number"
+            value={ number }
+            onChange={ (e) => { setNumber(e.target.value); } }
+            data-testid="customer_checkout__input-addressNumber"
+          />
+        </label>
+      </div>
       <button
         type="button"
         onClick={ finishSale }
@@ -60,7 +62,6 @@ function ShipDetails() {
         data-testid="customer_checkout__button-submit-order"
       >
         Finalizar pedido
-
       </button>
     </form>
   );

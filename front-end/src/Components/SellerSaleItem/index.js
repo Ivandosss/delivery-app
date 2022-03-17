@@ -7,30 +7,35 @@ function SellerSaleItem({ product, index }) {
 
     <tr>
       <td
+        className="carrinho-item"
         data-testid={ `seller_order_details__element-order-table-item-number-${index}` }
       >
         {index + 1}
 
       </td>
       <td
+        className="carrinho-item"
         data-testid={ `seller_order_details__element-order-table-name-${index}` }
       >
         {product.name}
 
       </td>
       <td
+        className="carrinho-item"
         data-testid={ `seller_order_details__element-order-table-quantity-${index}` }
       >
         {product.salesProduct.quantity}
 
       </td>
       <td
+        className="carrinho-item"
         data-testid={ `seller_order_details__element-order-table-sub-total-${index}` }
       >
         {formatPrice(product.price)}
 
       </td>
       <td
+        className="carrinho-item"
         data-testid={ `seller_order_details__element-order-total-price-${index}` }
       >
         {formatPrice(parseFloat(
