@@ -1,10 +1,5 @@
-### Termos de acordo
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
-
----
-
-# Boas vindas ao repositório do projeto App de Delivery!
+# Boas vindas ao repositório do projeto em Grupo App de Delivery!
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Tenha atenção a cada passo, e se tiver qualquer dúvida nos envie por _Slack_! #vqv 🚀
 
@@ -14,11 +9,10 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 # Sumário
 
-- [Boas vindas ao repositório do projeto App de Delivery!](#boas-vindas-ao-repositório-do-projeto-app-de-delivery)
+- [Boas vindas ao repositório do projeto em Grupo App de Delivery!](#boas-vindas-ao-repositório-do-projeto-em-grupo-app-de-delivery)
 - [Sumário](#sumário)
 - [Contexto](#contexto)
 - [Habilidades](#habilidades)
-- [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
   - [Desenvolvimento](#desenvolvimento)
   - [Data de Entrega](#data-de-entrega)
@@ -100,9 +94,6 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [`Extra não avaliativo`](#extra-não-avaliativo)
     - [Realizar o deploy do projeto back-end e front-end](#realizar-o-deploy-do-projeto-back-end-e-front-end)
     - [Qual poderia ser o próximo passo?](#qual-poderia-ser-o-próximo-passo)
-- [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
-- [Revisando um pull request](#revisando-um-pull-request)
-- [Avisos finais](#avisos-finais)
 
 ---
 
@@ -142,19 +133,6 @@ Nesse projeto, você deverá ser capaz de:
 - Implementar a funcionalidade de comunicação em tempo real, utilizando o socket.io.
 - Manter aderência aos princípios SOLID;
 
-# Entregáveis
-
-- **Cada grupo** terá uma branch específica no formato `main-group-X`. Ex: `main-group-1`; `main-group-2`; etc;
-
-- **Para entregar o seu projeto** você deverá criar um `Pull Request` **base** neste repositório no formato `[MAIN GROUP X] [BASE]`, que deve apontar a branch `main-group-X` para branch `main`, ela será sua **PR principal** e deve agregar ao final todo o trabalho do seu grupo para avaliação;
-
-- **Cada feature/fix/etc** deve ser desenvolvida em uma nova branch, cujo formato **preferencialmente** deve ser `main-group-X-<alteração>-<especificação>`. Ex: `main-group-1-feat-login-form`. Isso ajudará tanto o seu time quanto a equipe de instrução a localizar seus trabalhos no projeto;
-
-- **Cada feature/fix/etc** deve, ao término, ser mergeada (preferencialmente via PR, com code review e aprovação de todo o grupo) com a **branch principal do grupo**, onde ocorrerá a avaliação. Ex: `main-group-1-feat-login-form` deve ser mergeado com `main-group-1`;
-
-- **Cada PR** deve, **preferencialmente** ter o título no formato `[MAIN GROUP X] [CONTEXTO] [ALTERAÇÃO] [DESCRIÇÃO]`. Ex: `[MAIN GROUP 1] [API] [FEAT] [LOGIN]`; `[MAIN GROUP 1] [FRONT] [FEAT] [LOGIN-FORM]`; etc. Isso ajudará tanto o seu time quanto a equipe de instrução a localizar seus trabalhos no projeto.
-
-Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/course/fundamentals/git-github-e-internet/git-github-o-que-e-e-para-que-serve/70601960-ba49-43ee-b80f-dfa5205ec9d5/dinamica-de-controle-de-versao/fd17caf0-86ba-4395-a2fd-01dca61c4618?use_case=calendar) sempre que precisar!
 
 ## O que deverá ser desenvolvido
 
@@ -1365,41 +1343,3 @@ Se seu projeto estiver concluído, considere a expansão que ele pode passar ao 
 É super importante que tenhamos seguido todos os princípios e boas práticas de programação (como `SOLID`, por exemplo), tal como uma boa modelagem do banco de dados que torne possível gerar **escala**.
 
 Evidentemente, nada fica ideal num primeiro momento, mas quanto mais conseguirmos trabalhar no nosso projeto pensando a manutenção dele no longo prazo, mais fácil fica de programarmos coisas novas partindo do nosso código legado, por isso é importante sempre revisar nosso trabalho!
-
----
-
-# Depois de terminar o desenvolvimento
-
-Para sinalizar que o seu projeto está pronto para _"Code Review"_, faça o seguinte:
-
-- Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-  - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-  - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-  - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-013-c`.
-
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
----
-
-# Revisando um pull request
-
-Use o conteúdo sobre [Code Review](https://app.betrybe.com/course/real-life-engineer/code-review) para te ajudar a revisar os _Pull Requests_.
-
-#VQV
-
----
-
-# Avisos finais
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
-
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-#VQV
-
----
-
-Você sabia que o LinkedIn é a principal rede social profissional e compartilhar o seu aprendizado lá é muito importante para quem deseja construir uma carreira de sucesso? Compartilhe esse projeto no seu LinkedIn, marque o perfil da Trybe (@trybe) e mostre para a sua rede toda a sua evolução.
